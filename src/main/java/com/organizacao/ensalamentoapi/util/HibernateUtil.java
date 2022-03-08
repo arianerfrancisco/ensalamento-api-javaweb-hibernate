@@ -19,7 +19,7 @@ public class HibernateUtil {
     public static void beginTransaction() {
         Session session = getSession();
         session.beginTransaction();
-    }
+    } // vai atrelar a thread na session de atendimento ao cliente
 
     public static void commitTransaction() {
         Session session = getSession();

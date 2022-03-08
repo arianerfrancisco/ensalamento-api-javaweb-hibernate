@@ -2,9 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
 
-<hibernate-mapping>
+<hibernate-mapping package="com.organizacao.ensalamentoapi.entity">
 	
-	<class name="entity.Aluno" table="aluno">
+	<class name="Aluno" table="aluno">
 		<id name="matricula" column="numero" type="java.lang.String">
 			<generator class="assigned" />
 			<!-- O Tipo assigned é o programador que define-->
@@ -12,7 +12,7 @@
 
 		<property name="nome" column="nome" type="java.lang.String" not-null="true" />
 		
-		<many-to-one name="sala" class="entity.Sala" column="sala_id" />
+		<many-to-one name="sala" class="Sala" column="sala_id" />
 		
 	</class>
 </hibernate-mapping>

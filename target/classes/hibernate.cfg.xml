@@ -22,6 +22,8 @@
     </property>
 
     <property name="current_session_context_class">thread</property>
+    <!-- thread no contexto web, mantem a mesma session para
+    todas as requisições do usuario-->
 
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
