@@ -1,7 +1,10 @@
 
 # ⛏ Aplicação Web - Hibernate + MySql
 
-<h1> Estrtura do projeto - segue preceitos MVC ( Model, View e Controller) </h1> 
+<h1> Estrtura do projeto -  MVC ( Model, View e Controller) </h1> 
+
+![images](https://user-images.githubusercontent.com/72419533/157290616-aea1cec4-1081-44ae-ba63-afb8563f0dce.png)
+
 
 <h2>🟢 DAO: </h2> 
 - Classes de acesso aos dados da aplicação. Responsabilidade: ter métodos que interage com os mecanismos de persistência.
