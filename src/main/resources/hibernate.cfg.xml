@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory>
-        <property name="connection.driver_class">
-            com.mysql.cj.jdbc.Driver
-        </property>
+  <session-factory>
+    <property name="connection.driver_class">
+      com.mysql.cj.jdbc.Driver
+    </property>
 
-        <property name="connection.url">
-            jdbc:mysql://localhost/ensalamento?useLegacyDatetimeCode=false&amp;serverTimezone=America/Sao_Paulo&amp;useSSL=false
-        </property>
+    <property name="connection.url">
+      jdbc:mysql://localhost/ensalamento?useLegacyDatetimeCode=false&amp;serverTimezone=America/Sao_Paulo&amp;useSSL=false
+    </property>
 
-        <property name="connection.username">root</property>
-        <property name="connection.password">123456</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">123456</property>
 
-        <property name="dialect">
-            org.hibernate.dialect.MySQL5Dialect
-        </property>
+    <property name="dialect">
+      org.hibernate.dialect.MySQL5Dialect
+    </property>
 
-        <property name="current_session_context_class">thread</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="current_session_context_class">thread</property>
+    <!-- thread no contexto web, mantem a mesma session para
+    todas as requisições do usuario-->
 
-        <mapping resource="Cliente.hbm.xml" />
-        <mapping resource="Livro.hbm.xml" />
-        <mapping resource="Editora.hbm.xml" />
-        <mapping resource="RG.hbm.xml" />
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
 
-    </session-factory>
+    <mapping resource="Aluno.hbm.xml" />
+    <mapping resource="Sala.hbm.xml" />
+    <mapping resource="Turma.hbm.xml" />
+
+  </session-factory>
 </hibernate-configuration>
