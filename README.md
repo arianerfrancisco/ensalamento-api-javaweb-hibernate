@@ -22,4 +22,6 @@ no pacote Action
 <h2> 🟢 Diretório WebContent </h2> 
 - Contém os arquivos JSP, que são responsáveis por gerar páginas dinâmicas
 
+
+
 <h3> 📓 Repositório criado para fins de Estudo </h3>
