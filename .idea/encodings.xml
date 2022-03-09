@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/lista_alunos.jsp" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/lista_salas.jsp" charset="ISO-8859-1" />
   </component>
 </project>
